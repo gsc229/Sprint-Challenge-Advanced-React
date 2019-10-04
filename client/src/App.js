@@ -19,8 +19,8 @@ class App extends React.Component {
     console.log("here's the data: App.js ", this.state.data);
     return (
       <div className='App'>
-        <h1>I'm App</h1>
-        <ChoosePlayerForm />
+        <h1>Player List (console.log's info from ls)</h1>
+        <ChoosePlayerForm data={this.state.data} />
         <PlayerList data={this.state.data} />
       </div>
     );
