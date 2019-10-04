@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Axios from 'axios';
 import PlayerList from './components/PlayerList';
+import ChoosePlayerForm from './components/ChoosePlayerForm';
 
 class App extends React.Component {
   state = {
@@ -19,6 +20,7 @@ class App extends React.Component {
     return (
       <div className='App'>
         <h1>I'm App</h1>
+        <ChoosePlayerForm />
         <PlayerList data={this.state.data} />
       </div>
     );
