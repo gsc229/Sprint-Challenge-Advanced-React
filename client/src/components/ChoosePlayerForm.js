@@ -6,7 +6,7 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 
 function ChoosePlayerForm({ data }) {
   console.log('ChoosePlayer data: ', data);
-  const [storedValue, setStoredValue] = useLocalStorage('data', data);
+  localStorage.setItem('data', JSON.stringify(data));
 
   const [playerName, handlePlayerName, setPlayerName] = useInput(
     'playerName',
